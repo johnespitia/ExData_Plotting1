@@ -1,7 +1,7 @@
 # Read Dataset
 data <- read.csv2("./household_power_consumption.txt", colClasses="character")
 
-# Convert the Date to Date/Time class
+# Convert the Date to Date class
 data[,"Date"] <- as.Date(data[,"Date"], "%d/%m/%Y")
 
 dates <- as.Date(c("2007-02-01","2007-02-02"))
